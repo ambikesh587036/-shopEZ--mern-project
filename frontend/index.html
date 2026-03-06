@@ -17,27 +17,35 @@ ShopEZ E-Commerce
 
 </header>
 
+<h2 style="padding-left:20px">Products</h2>
+
 <div class="products">
 
 <div class="card">
 <h3>Smartphone</h3>
 <p>₹15000</p>
-<button onclick="addToCart('Smartphone')">Add to Cart</button>
+<button onclick="addToCart('Smartphone',15000)">Add to Cart</button>
 </div>
 
 <div class="card">
 <h3>Laptop</h3>
 <p>₹55000</p>
-<button onclick="addToCart('Laptop')">Add to Cart</button>
+<button onclick="addToCart('Laptop',55000)">Add to Cart</button>
 </div>
 
 <div class="card">
 <h3>Headphones</h3>
 <p>₹2000</p>
-<button onclick="addToCart('Headphones')">Add to Cart</button>
+<button onclick="addToCart('Headphones',2000)">Add to Cart</button>
 </div>
 
 </div>
+
+<h2 style="padding-left:20px">Cart</h2>
+
+<ul id="cart-items"></ul>
+
+<h3 id="total" style="padding-left:20px">Total: ₹0</h3>
 
 <footer>
 
