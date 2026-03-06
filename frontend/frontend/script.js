@@ -1,37 +1,34 @@
-let cart = []
+function signup(){
 
-function addToCart(product, price){
+let name = document.getElementById("name").value
+let email = document.getElementById("email").value
+let password = document.getElementById("password").value
 
-cart.push({product, price})
+localStorage.setItem("user", JSON.stringify({name,email,password}))
 
-alert(product + " added to cart")
+alert("Signup successful")
 
-updateCart()
+window.location.href = "login.html"
 
 }
 
-function updateCart(){
+function login(){
 
-let cartList = document.getElementById("cart-items")
+let email = document.getElementById("email").value
+let password = document.getElementById("password").value
 
-let totalPrice = document.getElementById("total")
+let user = JSON.parse(localStorage.getItem("user"))
 
-cartList.innerHTML = ""
+if(user.email === email && user.password === password){
 
-let total = 0
+alert("Login successful")
 
-cart.forEach(item => {
+window.location.href = "index.html"
 
-let li = document.createElement("li")
+}else{
 
-li.innerText = item.product + " - ₹" + item.price
+alert("Invalid login")
 
-cartList.appendChild(li)
+}
 
-total += item.price
-
-})
-
-totalPrice.innerText = "Total: ₹" + total
-
-  }
+}
