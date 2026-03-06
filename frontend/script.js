@@ -1,34 +1,17 @@
-function signup(){
+let cart=[]
 
-let name = document.getElementById("name").value
-let email = document.getElementById("email").value
-let password = document.getElementById("password").value
+function addToCart(product){
 
-localStorage.setItem("user", JSON.stringify({name,email,password}))
+cart.push(product)
 
-alert("Signup successful")
+let list=document.getElementById("cart-items")
 
-window.location.href = "login.html"
+let item=document.createElement("li")
 
-}
+item.innerText=product
 
-function login(){
+list.appendChild(item)
 
-let email = document.getElementById("email").value
-let password = document.getElementById("password").value
-
-let user = JSON.parse(localStorage.getItem("user"))
-
-if(user.email === email && user.password === password){
-
-alert("Login successful")
-
-window.location.href = "index.html"
-
-}else{
-
-alert("Invalid login")
-
-}
+alert(product+" added to cart")
 
 }
