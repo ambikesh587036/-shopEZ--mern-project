@@ -1,13 +1,100 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+
 <title>ShopEZ</title>
+
+<style>
+
+body{
+font-family:Arial;
+margin:0;
+background:#f5f5f5;
+}
+
+header{
+background:#2874f0;
+color:white;
+padding:15px;
+font-size:22px;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+padding:20px;
+}
+
+.card{
+background:white;
+padding:15px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+button{
+background:#ff9f00;
+border:none;
+padding:10px;
+cursor:pointer;
+border-radius:5px;
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:40px;
+}
+
+</style>
+
 </head>
 
 <body>
 
-<h1>Welcome to ShopEZ</h1>
-<p>Your E-commerce website</p>
+<header>
+
+ShopEZ E-Commerce
+
+</header>
+
+<div class="products">
+
+<div class="card">
+<h3>Smartphone</h3>
+<p>₹15000</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="card">
+<h3>Laptop</h3>
+<p>₹55000</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="card">
+<h3>Headphones</h3>
+<p>₹2000</p>
+<button>Add to Cart</button>
+</div>
+
+</div>
+
+<footer>
+
+<h2>ShopEZ</h2>
+
+<p>Lead: Ambikesh Dwivedi</p>
+<p>Member: Anushka</p>
+<p>Member: Arvind</p>
+
+</footer>
 
 </body>
-</html>
+
+  </html>
