@@ -1,63 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 
-<title>ShopEZ</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="./style.css">
+<title>eshopEZ</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-<header>
+<nav class="navbar">
 
-<h1>ShopEZ E-Commerce</h1>
+<div class="logo">eshopEZ</div>
 
-</header>
+<ul>
 
-<h2 style="padding-left:20px">Products</h2>
+<li>Home</li>
+<li>Categories</li>
+<li>New Arrivals</li>
 
-<div class="products">
+</ul>
+
+<input class="search" placeholder="Search products">
+
+</nav>
+
+
+<section class="hero">
+
+<h1>Future of Online Shopping</h1>
+
+<p>Discover premium gadgets & accessories</p>
+
+<button class="cta">Shop Now</button>
+
+</section>
+
+
+<section class="products">
 
 <div class="card">
+
 <h3>Smartphone</h3>
 <p>₹15000</p>
-<button onclick="addToCart('Smartphone',15000)">Add to Cart</button>
+<button onclick="addToCart('Smartphone')">Add to Cart</button>
+
 </div>
 
+
 <div class="card">
+
 <h3>Laptop</h3>
 <p>₹55000</p>
-<button onclick="addToCart('Laptop',55000)">Add to Cart</button>
+<button onclick="addToCart('Laptop')">Add to Cart</button>
+
 </div>
+
 
 <div class="card">
+
 <h3>Headphones</h3>
 <p>₹2000</p>
-<button onclick="addToCart('Headphones',2000)">Add to Cart</button>
-</div>
+<button onclick="addToCart('Headphones')">Add to Cart</button>
 
 </div>
 
-<h2 style="padding-left:20px">Cart</h2>
+</section>
+
+
+<div class="cart">
+
+<h2>Cart</h2>
 
 <ul id="cart-items"></ul>
 
-<h3 id="total" style="padding-left:20px">Total: ₹0</h3>
+</div>
+
 
 <footer>
 
-<h2>ShopEZ</h2>
-
-<p>Lead: Ambikesh Dwivedi</p>
-<p>Member: Anushka</p>
-<p>Member: Arvind</p>
+<p>Designed & Developed with ❤️ by Ambikesh, Anushka, & Arvind</p>
 
 </footer>
 
-<script src="./script.js"></script>
+<script src="script.js"></script>
 
 </body>
 
